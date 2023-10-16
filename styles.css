@@ -1,0 +1,39 @@
+.main {
+    height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.bubble {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    animation-name: animate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+    /* animation-direction:alternate; */
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: none;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(500px);
+        /* transform: translateX(100px); */
+    }
+
+    100%{
+        transform: translateY(-100px);
+    }
+}
+
+
